@@ -1,6 +1,284 @@
-.container{
+<style>
+@import url('https://fonts.googleapis.com/css?family=UnifrakturMaguntia');
+
+div{
+    outline: 2px solid lime;
+}
+
+body{
+    background-color: #f2f2f2;
+    margin: 0;
+    font-family: 'Courier New', serif;
+}
+
+img{
+    float: left;
+}
+
+.center{
     width: 960px;
     margin-left: auto;
-    margin-right: auto;
-    min-height: 100px;
+    margin-right:auto;
 }
+
+.header{
+    background-color: black;
+    height: 90px;
+    color: white;
+    margin: 0;
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+.nav{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 3rem;
+    margin-top: 20px;
+    float:left;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.links{
+    margin-top: 40px;
+    font-size: 0.75rem;
+    float: right;
+    color: #f2f2f2;
+}
+
+.links a{
+    color: #f2f2f2;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.links a:hover{
+    text-decoration:line-through;
+}
+
+.active{
+    text-decoration:line-through;
+}
+
+
+.bodyImages{
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    height: 515px;
+    margin-top: 200px;
+}
+
+.bodyImages2{
+    margin-left:auto;
+    margin-right:auto;
+    width: 960px;
+    height: 1083px;
+    display: block;
+    margin-top: 200px;
+}
+
+.bodyImages4{
+    margin-left:auto;
+    margin-right:auto;
+    width: 960px;
+    height: 1713px;
+    display: block;
+    margin-top: 125px;
+}
+
+.bodyImages5{
+    margin-left:auto;
+    margin-right:auto;
+    width: 960px;
+    height: 320px;
+    display: block;
+    margin-top: 125px;
+}
+
+.bodyImages6{
+    margin-left:auto;
+    margin-right:auto;
+    width: 960px;
+    height: 320px;
+    display: block;
+    margin-top: 125px;
+}
+
+.bodyImages7{
+    margin-left:auto;
+    margin-right:auto;
+    width: 960px;
+    height: 960px;
+    display: block;
+    margin-top: 125px;
+}
+
+.bodyImages8{
+    margin-left:auto;
+    margin-right:auto;
+    width: 960px;
+    height: 640px;
+    display: block;
+    margin-top: 125px;
+}
+
+.bodyImages9{
+    margin-left:auto;
+    margin-right:auto;
+    width: 960px;
+    height: 2566px;
+    display: block;
+    margin-top: 125px;
+}
+
+.aboutSimp{
+    margin-top: 200px;
+    width: 960px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.aboutParagraph{
+    width: 500px;
+    font-family: 'Courier New', serif;
+    font-size: 0.8rem;
+    line-height: 20px;
+    float: left;
+ 
+}
+
+.leftQuote{
+    float:left;
+    margin-top: 50px;
+    margin-right: 150px;
+}
+
+.rightQuote{
+    float:right;
+    margin-top: 50px;
+}
+
+.aboutImage{
+    float: left;
+    margin-top: 20px;
+    width: 480px;
+    height: 480px;
+    margin-left: 345px;
+}
+
+.bodyImages3{
+    margin-left:auto;
+    margin-right:auto;
+    width: 960px;
+    height: 480px;
+    display: block;
+    margin-top: 200px;
+}
+
+.bodyImages10{
+    margin-left:auto;
+    margin-right:auto;
+    width: 960px;
+    height: 480px;
+    display: block;
+    margin-top: 125px;
+}
+
+.bodyImages11{
+    margin-left:auto;
+    margin-right:auto;
+    width: 960px;
+    height: 679px;
+    display: block;
+    margin-top: 125px;
+}
+
+.bodyImages12{
+    margin-left:auto;
+    margin-right:auto;
+    width: 960px;
+    height: 650px;
+    display: block;
+    margin-top: 125px;
+}
+
+.contactMessage{
+    margin-top: 200px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.contactForm{
+    float: left;
+    margin-top: 55px;
+    text-align: center;
+    width: 960px;
+}
+
+.contactForm form{
+    font-size: 0.8rem;
+}
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 0.8rem;
+    font-family: 'Courier New', serif;
+}
+
+input[type=text]:focus {
+    background-color: lightgray;
+    border: 3px solid black;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: black;
+    border: none;
+    color: white;
+    font-family: 'Courier New', serif;
+    padding: 16px 32px;
+    text-decoration:none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+
+
+.footer{
+    width: 100%;
+    background-color: black;
+    height: 50px;
+    float: left;
+    margin-top: 130px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.footer p{
+    text-align: center;
+    line-height: 35px; 
+    color: white;
+    font-size: 0.6rem;
+}
+
+
+    
